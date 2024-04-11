@@ -4,7 +4,7 @@ var buttonColours = ["red", "blue", "green", "yellow"];
 
 var started = false;
 var level = 0;
-$(document).on("keydown click", function () {
+$(document).keydown(function () {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
